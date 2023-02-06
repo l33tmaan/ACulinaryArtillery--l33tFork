@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net461;net7</TargetFrameworks>
+		<TargetFrameworks>net462;net7</TargetFrameworks>
 		<LangVersion>9</LangVersion>
 		<ApplicationIcon />
 		<OutputType>Library</OutputType>
@@ -13,9 +13,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Compile Remove="assets\aculinaryartillery\textures\item\liquid\**" />
-		<EmbeddedResource Remove="assets\aculinaryartillery\textures\item\liquid\**" />
-		<None Remove="assets\aculinaryartillery\textures\item\liquid\**" />
+		<Compile Remove="publish\**" />
+		<EmbeddedResource Remove="publish\**" />
+		<None Remove="publish\**" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -33,9 +33,6 @@
 		</None>
 	</ItemGroup>
 
-	<ItemGroup>
-		<Folder Include="assets\aculinaryartillery\textures\item\food\eggyolk\" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<Reference Include="0Harmony">
